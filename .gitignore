@@ -45,6 +45,5 @@ ModuleCache/
 ModuleCache.noindex/
 Logs/
 TestResults/
-info.plist
 
 *.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings%
