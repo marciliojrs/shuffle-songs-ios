@@ -1,0 +1,3 @@
+protocol View {
+    func setupView()
+}
