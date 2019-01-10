@@ -19,10 +19,13 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Testsstas.xcscheme_^#shared#^_</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>AD6CDA8121E6C93200AF38FE</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
