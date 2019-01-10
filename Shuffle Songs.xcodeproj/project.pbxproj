@@ -29,8 +29,13 @@
 		AD6CDA6521E645C000AF38FE /* GetSongsByArtistListWithLimitUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA6421E645C000AF38FE /* GetSongsByArtistListWithLimitUseCase.swift */; };
 		AD6CDA6721E6461700AF38FE /* ShuffleSongsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA6621E6461700AF38FE /* ShuffleSongsUseCase.swift */; };
 		AD6CDA6921E6463E00AF38FE /* MusicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA6821E6463E00AF38FE /* MusicRepository.swift */; };
-		AD6CDA7821E6524700AF38FE /* Testsstas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CDA7121E6524700AF38FE /* Testsstas.framework */; };
-		AD6CDA7921E6524700AF38FE /* Testsstas.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CDA7121E6524700AF38FE /* Testsstas.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD6CDA8621E6C93200AF38FE /* APIProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6CDA8421E6C93200AF38FE /* APIProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6CDA8921E6C93200AF38FE /* APIProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CDA8221E6C93200AF38FE /* APIProvider.framework */; };
+		AD6CDA8A21E6C93200AF38FE /* APIProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CDA8221E6C93200AF38FE /* APIProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD6CDA9221E6C95E00AF38FE /* MusicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9121E6C95E00AF38FE /* MusicRepository.swift */; };
+		AD6CDA9421E6C96700AF38FE /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9321E6C96700AF38FE /* UseCaseFactory.swift */; };
+		AD6CDA9621E6C97000AF38FE /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9521E6C97000AF38FE /* Artist.swift */; };
+		AD6CDA9821E6C97700AF38FE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9721E6C97700AF38FE /* Track.swift */; };
 		E2F6B5CBD883EFE57B1F53FF /* Pods_Shuffle_SongsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BE84128EAC9A5827E0CA50 /* Pods_Shuffle_SongsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,12 +61,12 @@
 			remoteGlobalIDString = AD6CDA4821E642D600AF38FE;
 			remoteInfo = Domain;
 		};
-		AD6CDA7621E6524700AF38FE /* PBXContainerItemProxy */ = {
+		AD6CDA8721E6C93200AF38FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD6CD9F121E63B5A00AF38FE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AD6CDA7021E6524700AF38FE;
-			remoteInfo = Testsstas;
+			remoteGlobalIDString = AD6CDA8121E6C93200AF38FE;
+			remoteInfo = APIProvider;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -72,8 +77,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AD6CDA8A21E6C93200AF38FE /* APIProvider.framework in Embed Frameworks */,
 				AD6CDA5121E642D600AF38FE /* Domain.framework in Embed Frameworks */,
-				AD6CDA7921E6524700AF38FE /* Testsstas.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +119,13 @@
 		AD6CDA6421E645C000AF38FE /* GetSongsByArtistListWithLimitUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSongsByArtistListWithLimitUseCase.swift; sourceTree = "<group>"; };
 		AD6CDA6621E6461700AF38FE /* ShuffleSongsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleSongsUseCase.swift; sourceTree = "<group>"; };
 		AD6CDA6821E6463E00AF38FE /* MusicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRepository.swift; sourceTree = "<group>"; };
-		AD6CDA7121E6524700AF38FE /* Testsstas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Testsstas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6CDA8221E6C93200AF38FE /* APIProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APIProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6CDA8421E6C93200AF38FE /* APIProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIProvider.h; sourceTree = "<group>"; };
+		AD6CDA8521E6C93200AF38FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6CDA9121E6C95E00AF38FE /* MusicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRepository.swift; sourceTree = "<group>"; };
+		AD6CDA9321E6C96700AF38FE /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		AD6CDA9521E6C97000AF38FE /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		AD6CDA9721E6C97700AF38FE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		DF252609D0F1FEFEB087D6C3 /* Pods-Shuffle Songs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shuffle Songs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shuffle Songs/Pods-Shuffle Songs.release.xcconfig"; sourceTree = "<group>"; };
 		EF748D9B0B9B749989AD00DD /* Pods_Shuffle_Songs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shuffle_Songs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,8 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6CDA8921E6C93200AF38FE /* APIProvider.framework in Frameworks */,
 				AD6CDA5021E642D600AF38FE /* Domain.framework in Frameworks */,
-				AD6CDA7821E6524700AF38FE /* Testsstas.framework in Frameworks */,
 				4FEB6663065F8594921B1509 /* Pods_Shuffle_Songs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +164,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD6CDA6E21E6524700AF38FE /* Frameworks */ = {
+		AD6CDA7F21E6C93200AF38FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,6 +204,7 @@
 				AD6CDA1021E63B6A00AF38FE /* Shuffle SongsTests */,
 				AD6CDA1B21E63B6A00AF38FE /* Shuffle SongsUITests */,
 				AD6CDA4A21E642D600AF38FE /* Domain */,
+				AD6CDA8321E6C93200AF38FE /* APIProvider */,
 				AD6CD9FA21E63B5A00AF38FE /* Products */,
 				A9C699CB94183B25C174E27B /* Pods */,
 				925BDAC34FBDA8E998D832D6 /* Frameworks */,
@@ -206,7 +218,7 @@
 				AD6CDA0D21E63B6A00AF38FE /* Shuffle SongsTests.xctest */,
 				AD6CDA1821E63B6A00AF38FE /* Shuffle SongsUITests.xctest */,
 				AD6CDA4921E642D600AF38FE /* Domain.framework */,
-				AD6CDA7121E6524700AF38FE /* Testsstas.framework */,
+				AD6CDA8221E6C93200AF38FE /* APIProvider.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,6 +345,43 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		AD6CDA8321E6C93200AF38FE /* APIProvider */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CDA9021E6C94D00AF38FE /* Entity */,
+				AD6CDA8F21E6C94800AF38FE /* UseCase */,
+				AD6CDA8E21E6C94200AF38FE /* Repository */,
+				AD6CDA8421E6C93200AF38FE /* APIProvider.h */,
+				AD6CDA8521E6C93200AF38FE /* Info.plist */,
+			);
+			path = APIProvider;
+			sourceTree = "<group>";
+		};
+		AD6CDA8E21E6C94200AF38FE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CDA9121E6C95E00AF38FE /* MusicRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AD6CDA8F21E6C94800AF38FE /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CDA9321E6C96700AF38FE /* UseCaseFactory.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		AD6CDA9021E6C94D00AF38FE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CDA9521E6C97000AF38FE /* Artist.swift */,
+				AD6CDA9721E6C97700AF38FE /* Track.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -344,10 +393,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD6CDA6C21E6524700AF38FE /* Headers */ = {
+		AD6CDA7D21E6C93200AF38FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6CDA8621E6C93200AF38FE /* APIProvider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +419,7 @@
 			);
 			dependencies = (
 				AD6CDA4F21E642D600AF38FE /* PBXTargetDependency */,
-				AD6CDA7721E6524700AF38FE /* PBXTargetDependency */,
+				AD6CDA8821E6C93200AF38FE /* PBXTargetDependency */,
 			);
 			name = "Shuffle Songs";
 			productName = "Shuffle Songs";
@@ -432,22 +482,22 @@
 			productReference = AD6CDA4921E642D600AF38FE /* Domain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AD6CDA7021E6524700AF38FE /* Testsstas */ = {
+		AD6CDA8121E6C93200AF38FE /* APIProvider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD6CDA7A21E6524700AF38FE /* Build configuration list for PBXNativeTarget "Testsstas" */;
+			buildConfigurationList = AD6CDA8B21E6C93200AF38FE /* Build configuration list for PBXNativeTarget "APIProvider" */;
 			buildPhases = (
-				AD6CDA6C21E6524700AF38FE /* Headers */,
-				AD6CDA6D21E6524700AF38FE /* Sources */,
-				AD6CDA6E21E6524700AF38FE /* Frameworks */,
-				AD6CDA6F21E6524700AF38FE /* Resources */,
+				AD6CDA7D21E6C93200AF38FE /* Headers */,
+				AD6CDA7E21E6C93200AF38FE /* Sources */,
+				AD6CDA7F21E6C93200AF38FE /* Frameworks */,
+				AD6CDA8021E6C93200AF38FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Testsstas;
-			productName = Testsstas;
-			productReference = AD6CDA7121E6524700AF38FE /* Testsstas.framework */;
+			name = APIProvider;
+			productName = APIProvider;
+			productReference = AD6CDA8221E6C93200AF38FE /* APIProvider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -475,8 +525,9 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
-					AD6CDA7021E6524700AF38FE = {
+					AD6CDA8121E6C93200AF38FE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -497,7 +548,7 @@
 				AD6CDA0C21E63B6A00AF38FE /* Shuffle SongsTests */,
 				AD6CDA1721E63B6A00AF38FE /* Shuffle SongsUITests */,
 				AD6CDA4821E642D600AF38FE /* Domain */,
-				AD6CDA7021E6524700AF38FE /* Testsstas */,
+				AD6CDA8121E6C93200AF38FE /* APIProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -533,7 +584,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD6CDA6F21E6524700AF38FE /* Resources */ = {
+		AD6CDA8021E6C93200AF38FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -673,10 +724,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD6CDA6D21E6524700AF38FE /* Sources */ = {
+		AD6CDA7E21E6C93200AF38FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6CDA9621E6C97000AF38FE /* Artist.swift in Sources */,
+				AD6CDA9421E6C96700AF38FE /* UseCaseFactory.swift in Sources */,
+				AD6CDA9221E6C95E00AF38FE /* MusicRepository.swift in Sources */,
+				AD6CDA9821E6C97700AF38FE /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,10 +753,10 @@
 			target = AD6CDA4821E642D600AF38FE /* Domain */;
 			targetProxy = AD6CDA4E21E642D600AF38FE /* PBXContainerItemProxy */;
 		};
-		AD6CDA7721E6524700AF38FE /* PBXTargetDependency */ = {
+		AD6CDA8821E6C93200AF38FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD6CDA7021E6524700AF38FE /* Testsstas */;
-			targetProxy = AD6CDA7621E6524700AF38FE /* PBXContainerItemProxy */;
+			target = AD6CDA8121E6C93200AF38FE /* APIProvider */;
+			targetProxy = AD6CDA8721E6C93200AF38FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1018,9 +1073,10 @@
 			};
 			name = Release;
 		};
-		AD6CDA7B21E6524700AF38FE /* Debug */ = {
+		AD6CDA8C21E6C93200AF38FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1029,16 +1085,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Testsstas/Info.plist;
+				INFOPLIST_FILE = APIProvider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.marcilio.shufflesongs.Testsstas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcilio.shufflesongs.APIProvider;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1046,9 +1103,10 @@
 			};
 			name = Debug;
 		};
-		AD6CDA7C21E6524700AF38FE /* Release */ = {
+		AD6CDA8D21E6C93200AF38FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1057,14 +1115,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Testsstas/Info.plist;
+				INFOPLIST_FILE = APIProvider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.marcilio.shufflesongs.Testsstas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcilio.shufflesongs.APIProvider;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1122,11 +1180,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD6CDA7A21E6524700AF38FE /* Build configuration list for PBXNativeTarget "Testsstas" */ = {
+		AD6CDA8B21E6C93200AF38FE /* Build configuration list for PBXNativeTarget "APIProvider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD6CDA7B21E6524700AF38FE /* Debug */,
-				AD6CDA7C21E6524700AF38FE /* Release */,
+				AD6CDA8C21E6C93200AF38FE /* Debug */,
+				AD6CDA8D21E6C93200AF38FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
