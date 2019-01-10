@@ -37,8 +37,10 @@
 		AD6CDA9621E6C97000AF38FE /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9521E6C97000AF38FE /* Artist.swift */; };
 		AD6CDA9821E6C97700AF38FE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9721E6C97700AF38FE /* Track.swift */; };
 		AD6CDA9B21E7801600AF38FE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9A21E7801600AF38FE /* NetworkService.swift */; };
-		AD6CDAB121E786B000AF38FE /* APIProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDAB021E786B000AF38FE /* APIProviderTests.swift */; };
 		AD6CDAB321E786B000AF38FE /* APIProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CDA8221E6C93200AF38FE /* APIProvider.framework */; };
+		ADF5660C21E7B768007EDAC8 /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5660B21E7B768007EDAC8 /* DomainConvertibleType.swift */; };
+		ADF5660E21E7B964007EDAC8 /* WrappedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5660D21E7B964007EDAC8 /* WrappedType.swift */; };
+		ADF5661021E7B97D007EDAC8 /* APIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5660F21E7B97D007EDAC8 /* APIResponses.swift */; };
 		E2F6B5CBD883EFE57B1F53FF /* Pods_Shuffle_SongsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BE84128EAC9A5827E0CA50 /* Pods_Shuffle_SongsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,8 +147,10 @@
 		AD6CDA9721E6C97700AF38FE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		AD6CDA9A21E7801600AF38FE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AD6CDAAE21E786AF00AF38FE /* APIProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD6CDAB021E786B000AF38FE /* APIProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviderTests.swift; sourceTree = "<group>"; };
 		AD6CDAB221E786B000AF38FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF5660B21E7B768007EDAC8 /* DomainConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
+		ADF5660D21E7B964007EDAC8 /* WrappedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedType.swift; sourceTree = "<group>"; };
+		ADF5660F21E7B97D007EDAC8 /* APIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponses.swift; sourceTree = "<group>"; };
 		DF252609D0F1FEFEB087D6C3 /* Pods-Shuffle Songs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shuffle Songs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shuffle Songs/Pods-Shuffle Songs.release.xcconfig"; sourceTree = "<group>"; };
 		EF748D9B0B9B749989AD00DD /* Pods_Shuffle_Songs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shuffle_Songs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -393,6 +397,8 @@
 			isa = PBXGroup;
 			children = (
 				AD6CDA9121E6C95E00AF38FE /* MusicRepository.swift */,
+				ADF5660D21E7B964007EDAC8 /* WrappedType.swift */,
+				ADF5660F21E7B97D007EDAC8 /* APIResponses.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -408,6 +414,7 @@
 		AD6CDA9021E6C94D00AF38FE /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				ADF5660A21E7B749007EDAC8 /* Domain Convertible */,
 				AD6CDA9521E6C97000AF38FE /* Artist.swift */,
 				AD6CDA9721E6C97700AF38FE /* Track.swift */,
 			);
@@ -425,10 +432,17 @@
 		AD6CDAAF21E786B000AF38FE /* APIProviderTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD6CDAB021E786B000AF38FE /* APIProviderTests.swift */,
 				AD6CDAB221E786B000AF38FE /* Info.plist */,
 			);
 			path = APIProviderTests;
+			sourceTree = "<group>";
+		};
+		ADF5660A21E7B749007EDAC8 /* Domain Convertible */ = {
+			isa = PBXGroup;
+			children = (
+				ADF5660B21E7B768007EDAC8 /* DomainConvertibleType.swift */,
+			);
+			path = "Domain Convertible";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -807,11 +821,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF5660E21E7B964007EDAC8 /* WrappedType.swift in Sources */,
+				ADF5661021E7B97D007EDAC8 /* APIResponses.swift in Sources */,
 				AD6CDA9B21E7801600AF38FE /* NetworkService.swift in Sources */,
 				AD6CDA9621E6C97000AF38FE /* Artist.swift in Sources */,
 				AD6CDA9421E6C96700AF38FE /* UseCaseFactory.swift in Sources */,
 				AD6CDA9221E6C95E00AF38FE /* MusicRepository.swift in Sources */,
 				AD6CDA9821E6C97700AF38FE /* Track.swift in Sources */,
+				ADF5660C21E7B768007EDAC8 /* DomainConvertibleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,7 +836,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD6CDAB121E786B000AF38FE /* APIProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

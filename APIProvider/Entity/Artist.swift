@@ -1,3 +1,5 @@
+import Domain
+
 struct Artist: Codable {
     let id: Int
     let name: String
@@ -11,3 +13,23 @@ struct Artist: Codable {
         case name = "artistName"
     }
 }
+
+extension Artist: DomainConvertibleType {
+    typealias DomainType = Domain.Artist
+
+    init(with domain: DomainType) {
+        self.id = domain.id
+        self.name = domain.name
+        self.primaryGenre = domain.primaryGenre
+        self.wrapperType = "artist"
+    }
+
+    func asDomain() -> Artist.DomainType {
+        return Domain.Artist(
+            id: id,
+            name: name,
+            primaryGenre: primaryGenre
+        )
+    }
+}
+
