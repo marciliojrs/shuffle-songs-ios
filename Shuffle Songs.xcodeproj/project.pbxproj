@@ -37,6 +37,8 @@
 		AD6CDA9621E6C97000AF38FE /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9521E6C97000AF38FE /* Artist.swift */; };
 		AD6CDA9821E6C97700AF38FE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9721E6C97700AF38FE /* Track.swift */; };
 		AD6CDA9B21E7801600AF38FE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDA9A21E7801600AF38FE /* NetworkService.swift */; };
+		AD6CDAB121E786B000AF38FE /* APIProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CDAB021E786B000AF38FE /* APIProviderTests.swift */; };
+		AD6CDAB321E786B000AF38FE /* APIProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CDA8221E6C93200AF38FE /* APIProvider.framework */; };
 		E2F6B5CBD883EFE57B1F53FF /* Pods_Shuffle_SongsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BE84128EAC9A5827E0CA50 /* Pods_Shuffle_SongsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = AD6CDA8121E6C93200AF38FE;
 			remoteInfo = APIProvider;
+		};
+		AD6CDAB421E786B000AF38FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6CD9F121E63B5A00AF38FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6CDA8121E6C93200AF38FE;
+			remoteInfo = APIProvider;
+		};
+		AD6CDAC021E795C700AF38FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6CD9F121E63B5A00AF38FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6CDA4821E642D600AF38FE;
+			remoteInfo = Domain;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -128,6 +144,9 @@
 		AD6CDA9521E6C97000AF38FE /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		AD6CDA9721E6C97700AF38FE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		AD6CDA9A21E7801600AF38FE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AD6CDAAE21E786AF00AF38FE /* APIProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6CDAB021E786B000AF38FE /* APIProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviderTests.swift; sourceTree = "<group>"; };
+		AD6CDAB221E786B000AF38FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF252609D0F1FEFEB087D6C3 /* Pods-Shuffle Songs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shuffle Songs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shuffle Songs/Pods-Shuffle Songs.release.xcconfig"; sourceTree = "<group>"; };
 		EF748D9B0B9B749989AD00DD /* Pods_Shuffle_Songs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shuffle_Songs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -173,6 +192,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD6CDAAB21E786AF00AF38FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6CDAB321E786B000AF38FE /* APIProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -207,6 +234,7 @@
 				AD6CDA1B21E63B6A00AF38FE /* Shuffle SongsUITests */,
 				AD6CDA4A21E642D600AF38FE /* Domain */,
 				AD6CDA8321E6C93200AF38FE /* APIProvider */,
+				AD6CDAAF21E786B000AF38FE /* APIProviderTests */,
 				AD6CD9FA21E63B5A00AF38FE /* Products */,
 				A9C699CB94183B25C174E27B /* Pods */,
 				925BDAC34FBDA8E998D832D6 /* Frameworks */,
@@ -221,6 +249,7 @@
 				AD6CDA1821E63B6A00AF38FE /* Shuffle SongsUITests.xctest */,
 				AD6CDA4921E642D600AF38FE /* Domain.framework */,
 				AD6CDA8221E6C93200AF38FE /* APIProvider.framework */,
+				AD6CDAAE21E786AF00AF38FE /* APIProviderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -393,6 +422,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		AD6CDAAF21E786B000AF38FE /* APIProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CDAB021E786B000AF38FE /* APIProviderTests.swift */,
+				AD6CDAB221E786B000AF38FE /* Info.plist */,
+			);
+			path = APIProviderTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -505,11 +543,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				AD6CDAC121E795C700AF38FE /* PBXTargetDependency */,
 			);
 			name = APIProvider;
 			productName = APIProvider;
 			productReference = AD6CDA8221E6C93200AF38FE /* APIProvider.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		AD6CDAAD21E786AF00AF38FE /* APIProviderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6CDAB821E786B000AF38FE /* Build configuration list for PBXNativeTarget "APIProviderTests" */;
+			buildPhases = (
+				AD6CDAAA21E786AF00AF38FE /* Sources */,
+				AD6CDAAB21E786AF00AF38FE /* Frameworks */,
+				AD6CDAAC21E786AF00AF38FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD6CDAB521E786B000AF38FE /* PBXTargetDependency */,
+			);
+			name = APIProviderTests;
+			productName = APIProviderTests;
+			productReference = AD6CDAAE21E786AF00AF38FE /* APIProviderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -540,6 +597,9 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
+					AD6CDAAD21E786AF00AF38FE = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = AD6CD9F421E63B5A00AF38FE /* Build configuration list for PBXProject "Shuffle Songs" */;
@@ -560,6 +620,7 @@
 				AD6CDA1721E63B6A00AF38FE /* Shuffle SongsUITests */,
 				AD6CDA4821E642D600AF38FE /* Domain */,
 				AD6CDA8121E6C93200AF38FE /* APIProvider */,
+				AD6CDAAD21E786AF00AF38FE /* APIProviderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -596,6 +657,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AD6CDA8021E6C93200AF38FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6CDAAC21E786AF00AF38FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -747,6 +815,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD6CDAAA21E786AF00AF38FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6CDAB121E786B000AF38FE /* APIProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -769,6 +845,16 @@
 			isa = PBXTargetDependency;
 			target = AD6CDA8121E6C93200AF38FE /* APIProvider */;
 			targetProxy = AD6CDA8721E6C93200AF38FE /* PBXContainerItemProxy */;
+		};
+		AD6CDAB521E786B000AF38FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6CDA8121E6C93200AF38FE /* APIProvider */;
+			targetProxy = AD6CDAB421E786B000AF38FE /* PBXContainerItemProxy */;
+		};
+		AD6CDAC121E795C700AF38FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6CDA4821E642D600AF38FE /* Domain */;
+			targetProxy = AD6CDAC021E795C700AF38FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1144,6 +1230,40 @@
 			};
 			name = Release;
 		};
+		AD6CDAB621E786B000AF38FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = APIProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcilio.shufflesongs.APIProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD6CDAB721E786B000AF38FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = APIProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcilio.shufflesongs.APIProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1197,6 +1317,15 @@
 			buildConfigurations = (
 				AD6CDA8C21E6C93200AF38FE /* Debug */,
 				AD6CDA8D21E6C93200AF38FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6CDAB821E786B000AF38FE /* Build configuration list for PBXNativeTarget "APIProviderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6CDAB621E786B000AF38FE /* Debug */,
+				AD6CDAB721E786B000AF38FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

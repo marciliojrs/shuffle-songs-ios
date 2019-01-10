@@ -22,6 +22,7 @@ enum APIResult {
     case failure(NetworkError)
 }
 
+typealias JSON = [String: Any]
 typealias NetworkServiceResponse = ((APIResult) -> Void)
 
 struct NetworkService {
@@ -60,11 +61,12 @@ struct NetworkService {
     }
 
     private func buildRequest(for resource: Resource) throws -> URLRequest {
-        guard var components = URLComponents(string: baseUrl),
-            let fullPath = components.url?.appendingPathComponent(resource.path) else { throw NetworkError.invalidUrl }
+        guard var components = URLComponents(string: baseUrl) else { throw NetworkError.invalidUrl }
 
         components.queryItems = resource.queryItems?.map { ($0.key, $0.value) }.map(URLQueryItem.init)
-        var urlRequest = URLRequest(url: fullPath, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 120)
+        guard let url = components.url?.appendingPathComponent(resource.path) else { throw NetworkError.invalidUrl }
+
+        var urlRequest = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 120)
         urlRequest.httpMethod = resource.method.rawValue
 
         return urlRequest

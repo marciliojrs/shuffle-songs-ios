@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD6CDAAD21E786AF00AF38FE"
+               BuildableName = "APIProviderTests.xctest"
+               BlueprintName = "APIProviderTests"
+               ReferencedContainer = "container:Shuffle Songs.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
+            BuildableName = "APIProvider.framework"
+            BlueprintName = "APIProvider"
+            ReferencedContainer = "container:Shuffle Songs.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
