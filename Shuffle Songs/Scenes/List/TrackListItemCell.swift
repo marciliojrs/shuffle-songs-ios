@@ -1,15 +1,20 @@
 import UIKit
+import Domain
 
 final class TrackListItemCell: UITableViewCell {
     private lazy var trackNameLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .secondary
+        label.font = .preferredFont(forTextStyle: .body)
         return label
     }()
 
     private lazy var trackArtistLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.font = .preferredFont(forTextStyle: .body)
         return label
     }()
 
@@ -17,6 +22,10 @@ final class TrackListItemCell: UITableViewCell {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .black
+        imageView.layer.cornerRadius = 8
+        imageView.layer.masksToBounds = true
+        imageView.contentMode = .scaleAspectFill
+
         return imageView
     }()
 
@@ -38,21 +47,27 @@ final class TrackListItemCell: UITableViewCell {
         stackView.addArrangedSubview(trackArtistLabel)
         contentView.addSubview(stackView)
 
-        trackNameLabel.text = "Track 1"
-        trackArtistLabel.text = "Artist 1"
+        backgroundColor = .primary
 
         setupConstraints()
     }
 
     private func setupConstraints() {
-        trackImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
-        trackImageView.widthAnchor.constraint(equalToConstant: 48).isActive = true
-        trackImageView.heightAnchor.constraint(equalToConstant: 48).isActive = true
+        trackImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 18
+            ).isActive = true
+        trackImageView.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        trackImageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         trackImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16).isActive = true
         trackImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
 
         stackView.leadingAnchor.constraint(equalTo: trackImageView.trailingAnchor, constant: 16).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 16).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
         stackView.centerYAnchor.constraint(equalTo: trackImageView.centerYAnchor).isActive = true
+    }
+
+    func bind(model: Track) {
+        trackNameLabel.text = model.name
+        trackArtistLabel.text = model.artistName
+        trackImageView.downloadImage(from: model.artwork)
     }
 }

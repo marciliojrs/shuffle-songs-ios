@@ -9,12 +9,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Appearance.install()
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
+        window?.backgroundColor = .primary
         window?.rootViewController = TrackListController(
             getTracksUseCase: useCaseFactory.makeGetTracksByArtistListWithLimit()
-        )
+        ).wrapIt(to: AppNavigationController.self)
+
         window?.makeKeyAndVisible()
         return true
     }

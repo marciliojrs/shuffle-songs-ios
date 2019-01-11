@@ -1,12 +1,13 @@
 import Domain
 
-class TrackListAdapter: NSObject, UITableViewDataSource {
+class TrackListAdapter: NSObject, UITableViewDataSource, UITableViewDataSourcePrefetching {
     private var items: [Track] = []
     private weak var tableView: UITableView?
 
     func attach(_ tableView: UITableView) {
         self.tableView = tableView
         self.tableView?.dataSource = self
+        self.tableView?.prefetchDataSource = self
 
         self.tableView?.register(TrackListItemCell.self, forCellReuseIdentifier: "cell")
     }
@@ -24,6 +25,12 @@ class TrackListAdapter: NSObject, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TrackListItemCell
             else { fatalError() }
 
+        cell.bind(model: items[indexPath.row])
+
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        indexPaths.forEach { ImageLoader.shared.loadImage(from: items[$0.row].artwork) }
     }
 }
