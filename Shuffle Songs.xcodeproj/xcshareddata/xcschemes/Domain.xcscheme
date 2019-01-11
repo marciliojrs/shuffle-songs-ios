@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
-               BuildableName = "APIProvider.framework"
-               BlueprintName = "APIProvider"
+               BlueprintIdentifier = "AD6CDA4821E642D600AF38FE"
+               BuildableName = "Domain.framework"
+               BlueprintName = "Domain"
                ReferencedContainer = "container:Shuffle Songs.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD6CDAAD21E786AF00AF38FE"
+               BlueprintIdentifier = "ADF5662121E7FA3B007EDAC8"
                BuildableName = "DomainTests.xctest"
                BlueprintName = "DomainTests"
                ReferencedContainer = "container:Shuffle Songs.xcodeproj">
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
-            BuildableName = "APIProvider.framework"
-            BlueprintName = "APIProvider"
+            BlueprintIdentifier = "AD6CDA4821E642D600AF38FE"
+            BuildableName = "Domain.framework"
+            BlueprintName = "Domain"
             ReferencedContainer = "container:Shuffle Songs.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
-            BuildableName = "APIProvider.framework"
-            BlueprintName = "APIProvider"
+            BlueprintIdentifier = "AD6CDA4821E642D600AF38FE"
+            BuildableName = "Domain.framework"
+            BlueprintName = "Domain"
             ReferencedContainer = "container:Shuffle Songs.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
-            BuildableName = "APIProvider.framework"
-            BlueprintName = "APIProvider"
+            BlueprintIdentifier = "AD6CDA4821E642D600AF38FE"
+            BuildableName = "Domain.framework"
+            BlueprintName = "Domain"
             ReferencedContainer = "container:Shuffle Songs.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

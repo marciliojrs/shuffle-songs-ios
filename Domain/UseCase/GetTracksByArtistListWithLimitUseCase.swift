@@ -1,4 +1,4 @@
-//switlint:disable:next type_name
+//swiftlint:disable:next type_name
 public typealias GetTracksByArtistListWithLimitUseCaseResponse = ((Result<[Track]>) -> Void)
 
 public protocol GetTracksByArtistListWithLimitUseCaseType {

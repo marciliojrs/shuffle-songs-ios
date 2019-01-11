@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
-               BuildableName = "APIProvider.framework"
-               BlueprintName = "APIProvider"
+               BlueprintIdentifier = "AD6CD9F821E63B5A00AF38FE"
+               BuildableName = "Shuffle Songs.app"
+               BlueprintName = "Shuffle Songs"
                ReferencedContainer = "container:Shuffle Songs.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,6 +32,26 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD6CDA0C21E63B6A00AF38FE"
+               BuildableName = "Shuffle SongsTests.xctest"
+               BlueprintName = "Shuffle SongsTests"
+               ReferencedContainer = "container:Shuffle Songs.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD6CDA1721E63B6A00AF38FE"
+               BuildableName = "Shuffle SongsUITests.xctest"
+               BlueprintName = "Shuffle SongsUITests"
+               ReferencedContainer = "container:Shuffle Songs.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "AD6CDAAD21E786AF00AF38FE"
                BuildableName = "DomainTests.xctest"
                BlueprintName = "DomainTests"
@@ -42,9 +62,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
-            BuildableName = "APIProvider.framework"
-            BlueprintName = "APIProvider"
+            BlueprintIdentifier = "AD6CD9F821E63B5A00AF38FE"
+            BuildableName = "Shuffle Songs.app"
+            BlueprintName = "Shuffle Songs"
             ReferencedContainer = "container:Shuffle Songs.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,15 +81,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
-            BuildableName = "APIProvider.framework"
-            BlueprintName = "APIProvider"
+            BlueprintIdentifier = "AD6CD9F821E63B5A00AF38FE"
+            BuildableName = "Shuffle Songs.app"
+            BlueprintName = "Shuffle Songs"
             ReferencedContainer = "container:Shuffle Songs.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +100,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD6CDA8121E6C93200AF38FE"
-            BuildableName = "APIProvider.framework"
-            BlueprintName = "APIProvider"
+            BlueprintIdentifier = "AD6CD9F821E63B5A00AF38FE"
+            BuildableName = "Shuffle Songs.app"
+            BlueprintName = "Shuffle Songs"
             ReferencedContainer = "container:Shuffle Songs.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

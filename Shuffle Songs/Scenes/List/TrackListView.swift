@@ -49,4 +49,8 @@ class TrackListView: BaseView {
         tableView.isHidden = isLoading
         isLoading ? loadingView.startAnimating() : loadingView.stopAnimating()
     }
+
+    var currentList: [Track] {
+        return adapter.items
+    }
 }

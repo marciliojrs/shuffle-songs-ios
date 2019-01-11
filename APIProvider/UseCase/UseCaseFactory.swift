@@ -9,4 +9,8 @@ public class UseCaseFactory: Domain.UseCaseFactory {
     public func makeGetTracksByArtistListWithLimit() -> GetTracksByArtistListWithLimitUseCaseType {
         return GetTracksByArtistListWithLimitUseCase(repository: MusicRepository(network: network))
     }
+
+    public func makeShuffle() -> ShuffleSongsUseCaseType {
+        return ShuffleSongsUseCase()
+    }
 }

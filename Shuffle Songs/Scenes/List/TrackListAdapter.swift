@@ -1,7 +1,7 @@
 import Domain
 
 class TrackListAdapter: NSObject, UITableViewDataSource, UITableViewDataSourcePrefetching {
-    private var items: [Track] = []
+    private(set) var items: [Track] = []
     private weak var tableView: UITableView?
 
     func attach(_ tableView: UITableView) {
