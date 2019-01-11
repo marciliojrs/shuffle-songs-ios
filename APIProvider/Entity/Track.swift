@@ -6,6 +6,7 @@ struct Track: Codable {
     let artistName: String
     let name: String
     let artwork: URL
+    let primaryGenre: String
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -13,6 +14,7 @@ struct Track: Codable {
         case artistName
         case name = "trackName"
         case artwork = "artworkUrl"
+        case primaryGenre = "primaryGenreName"
     }
 }
 
@@ -24,6 +26,7 @@ extension Track: DomainConvertibleType {
         self.name = domain.name
         self.artistName = domain.artistName
         self.artwork = domain.artwork
+        self.primaryGenre = domain.primaryGenre
         self.wrapperType = "track"
     }
 
@@ -32,7 +35,8 @@ extension Track: DomainConvertibleType {
             id: id,
             artistName: artistName,
             name: name,
-            artwork: artwork
+            artwork: artwork,
+            primaryGenre: primaryGenre
         )
     }
 }

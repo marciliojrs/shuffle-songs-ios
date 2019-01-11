@@ -6,6 +6,7 @@ final class TrackListItemCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .secondary
+        label.numberOfLines = 2
         label.font = .preferredFont(forTextStyle: .body)
         return label
     }()
@@ -14,6 +15,7 @@ final class TrackListItemCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
+        label.numberOfLines = 2
         label.font = .preferredFont(forTextStyle: .body)
         return label
     }()
@@ -21,7 +23,7 @@ final class TrackListItemCell: UITableViewCell {
     private lazy var trackImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .black
+        imageView.backgroundColor = .clear
         imageView.layer.cornerRadius = 8
         imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFill
@@ -48,6 +50,7 @@ final class TrackListItemCell: UITableViewCell {
         contentView.addSubview(stackView)
 
         backgroundColor = .primary
+        selectionStyle = .none
 
         setupConstraints()
     }
@@ -67,7 +70,7 @@ final class TrackListItemCell: UITableViewCell {
 
     func bind(model: Track) {
         trackNameLabel.text = model.name
-        trackArtistLabel.text = model.artistName
+        trackArtistLabel.text = model.artistName + " (\(model.primaryGenre))"
         trackImageView.downloadImage(from: model.artwork)
     }
 }
