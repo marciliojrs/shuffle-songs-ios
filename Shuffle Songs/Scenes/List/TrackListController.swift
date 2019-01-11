@@ -2,11 +2,13 @@ import Domain
 
 class TrackListController: BaseViewController<TrackListView> {
     private let getTracksUseCase: GetTracksByArtistListWithLimitUseCaseType
+    private let shuffleUseCase: ShuffleSongsUseCaseType
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
-    init(getTracksUseCase: GetTracksByArtistListWithLimitUseCaseType) {
+    init(getTracksUseCase: GetTracksByArtistListWithLimitUseCaseType, shuffleUseCase: ShuffleSongsUseCaseType) {
         self.getTracksUseCase = getTracksUseCase
+        self.shuffleUseCase = shuffleUseCase
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -38,6 +40,6 @@ class TrackListController: BaseViewController<TrackListView> {
     }
 
     @objc func shuffleTracks() {
-
+        mainView.addTracks(shuffleUseCase.execute(tracks: mainView.currentList))
     }
 }

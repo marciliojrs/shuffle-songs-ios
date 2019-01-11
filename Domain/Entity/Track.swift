@@ -1,4 +1,4 @@
-public struct Track: Equatable {
+public struct Track: Equatable, Hashable {
     public let id: Identity
     public let artistName: String
     public let name: String
@@ -11,5 +11,11 @@ public struct Track: Equatable {
         self.name = name
         self.artwork = artwork
         self.primaryGenre = primaryGenre
+    }
+}
+
+extension Track: CustomDebugStringConvertible {
+    public var debugDescription: String {
+        return "\(name)-\(artistName)"
     }
 }

@@ -15,6 +15,7 @@ enum NetworkError: Error {
     case noHttpResponse
     case noData
     case httpError(code: Int)
+    case underlying(Error)
 }
 
 enum APIResult {
@@ -40,6 +41,11 @@ struct NetworkService {
         let task = session.dataTask(with: request) { (data, response, error) in
             guard let httpResponse = response as? HTTPURLResponse else {
                 callback(.failure(NetworkError.noHttpResponse))
+                return
+            }
+
+            guard error == nil else {
+                callback(.failure(NetworkError.underlying(error!)))
                 return
             }
 

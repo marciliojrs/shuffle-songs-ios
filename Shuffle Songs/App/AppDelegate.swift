@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window?.rootViewController = SplashController { [weak self, useCaseFactory] in
             let trackListController = TrackListController(
-                getTracksUseCase: useCaseFactory.makeGetTracksByArtistListWithLimit()
+                getTracksUseCase: useCaseFactory.makeGetTracksByArtistListWithLimit(),
+                shuffleUseCase: useCaseFactory.makeShuffle()
             ).wrapIt(to: AppNavigationController.self)
 
             self?.changeRootViewController(to: trackListController, animated: true)
