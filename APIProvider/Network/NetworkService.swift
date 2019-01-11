@@ -49,7 +49,9 @@ struct NetworkService {
                     return
                 }
 
-                callback(.success(data))
+                DispatchQueue.main.async {
+                    callback(.success(data))
+                }
                 return
             } else {
                 callback(.failure(NetworkError.httpError(code: httpResponse.statusCode)))
