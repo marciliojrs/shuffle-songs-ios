@@ -45,6 +45,9 @@
 		AD7F088521E8E1D5004B39F0 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7F088421E8E1D5004B39F0 /* AppNavigationController.swift */; };
 		AD7F088721E8E62A004B39F0 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7F088621E8E62A004B39F0 /* UIImageView+Download.swift */; };
 		AD7F088921E8EF08004B39F0 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7F088821E8EF08004B39F0 /* ImageLoader.swift */; };
+		AD7F088B21E8F0EA004B39F0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7F088A21E8F0EA004B39F0 /* GradientView.swift */; };
+		AD7F088E21E8F534004B39F0 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7F088D21E8F534004B39F0 /* SplashController.swift */; };
+		AD7F089021E8F53C004B39F0 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7F088F21E8F53C004B39F0 /* SplashView.swift */; };
 		ADF5660C21E7B768007EDAC8 /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5660B21E7B768007EDAC8 /* DomainConvertibleType.swift */; };
 		ADF5660E21E7B964007EDAC8 /* WrappedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5660D21E7B964007EDAC8 /* WrappedType.swift */; };
 		ADF5661021E7B97D007EDAC8 /* APIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5660F21E7B97D007EDAC8 /* APIResponses.swift */; };
@@ -169,6 +172,9 @@
 		AD7F088421E8E1D5004B39F0 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		AD7F088621E8E62A004B39F0 /* UIImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
 		AD7F088821E8EF08004B39F0 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		AD7F088A21E8F0EA004B39F0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		AD7F088D21E8F534004B39F0 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		AD7F088F21E8F53C004B39F0 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		ADF5660B21E7B768007EDAC8 /* DomainConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
 		ADF5660D21E7B964007EDAC8 /* WrappedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedType.swift; sourceTree = "<group>"; };
 		ADF5660F21E7B97D007EDAC8 /* APIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponses.swift; sourceTree = "<group>"; };
@@ -487,8 +493,18 @@
 			children = (
 				AD7F088221E8E1B0004B39F0 /* Appearance.swift */,
 				AD7F088421E8E1D5004B39F0 /* AppNavigationController.swift */,
+				AD7F088A21E8F0EA004B39F0 /* GradientView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		AD7F089121E90FB9004B39F0 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AD7F088D21E8F534004B39F0 /* SplashController.swift */,
+				AD7F088F21E8F53C004B39F0 /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		ADF5660A21E7B749007EDAC8 /* Domain Convertible */ = {
@@ -527,6 +543,7 @@
 		ADF5662D21E824F7007EDAC8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				AD7F089121E90FB9004B39F0 /* Splash */,
 				ADF5662E21E82501007EDAC8 /* List */,
 			);
 			path = Scenes;
@@ -879,8 +896,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7F088E21E8F534004B39F0 /* SplashController.swift in Sources */,
 				AD7F088921E8EF08004B39F0 /* ImageLoader.swift in Sources */,
+				AD7F089021E8F53C004B39F0 /* SplashView.swift in Sources */,
 				AD7F088021E8E192004B39F0 /* UIViewController+Util.swift in Sources */,
+				AD7F088B21E8F0EA004B39F0 /* GradientView.swift in Sources */,
 				AD6CDA4121E6407500AF38FE /* View.swift in Sources */,
 				AD6CDA3621E63D1900AF38FE /* AppDelegate.swift in Sources */,
 				AD7F087A21E82FA4004B39F0 /* TrackListItemCell.swift in Sources */,
