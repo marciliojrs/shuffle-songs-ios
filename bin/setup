@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo "--------------------";
+echo "⬇️  Running bundler  ";
+echo "--------------------";
+bundle install
+
+echo "----------------------";
+echo "⬇️  Running cocoapods  ";
+echo "----------------------";
+bundle exec pod install --repo-update
+
+echo "✅  Done"

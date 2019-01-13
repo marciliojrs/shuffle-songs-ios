@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+xcodebuild \
+  -workspace Shuffle\ Songs.xcworkspace \
+  -scheme Shuffle\ Songs \
+  -sdk iphonesimulator \
+  -destination 'platform=iOS Simulator,name=iPhone SE,OS=12.1' \
+  test | xcpretty --test --color
