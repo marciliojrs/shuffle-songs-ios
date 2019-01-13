@@ -32,3 +32,7 @@ To run the tests just run the following script in your terminal application:
 ### Dependencies
 
 - Swiftlint: Enforce code style.
+
+### Preview
+
+![Preview](https://github.com/marciliojrs/shuffle-songs-ios/blob/master/preview.gif)
