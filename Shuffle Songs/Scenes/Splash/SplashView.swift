@@ -40,6 +40,8 @@ final class SplashView: BaseView {
     }()
 
     override func setupView() {
+        accessibilityIdentifier = "splashView"
+
         addSubview(gradientView)
         stackView.addArrangedSubview(logoImage)
         stackView.addArrangedSubview(logoTextImage)

@@ -3,7 +3,7 @@ import Domain
 class MusicRepositoryMock: MusicRepository {
     var lookupCalled: Bool = false
     var lookupArtistIdsParam: [Identity]?
-    var lookupLimitParam: Int? = nil
+    var lookupLimitParam: Int?
     var lookupResponse: Result<[Track]>?
 
     func lookup(artistIds: [Identity], limit: Int?, callback: @escaping ((Result<[Track]>) -> Void)) {

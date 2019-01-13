@@ -25,6 +25,7 @@ class TrackListAdapter: NSObject, UITableViewDataSource, UITableViewDataSourcePr
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TrackListItemCell
             else { fatalError() }
 
+        cell.accessibilityIdentifier = "cell_\(indexPath.row)"
         cell.bind(model: items[indexPath.row])
 
         return cell

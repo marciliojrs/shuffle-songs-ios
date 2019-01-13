@@ -21,14 +21,18 @@ class TrackListController: BaseViewController<TrackListView> {
 
     private func setupNavigation() {
         navigationItem.title = "Shuffle Songs"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "shuffle"),
-                                                            style: .plain,
-                                                            target: self,
-                                                            action: #selector(shuffleTracks))
+
+        let shuffleButton = UIBarButtonItem(image: UIImage(named: "shuffle"),
+                                            style: .plain,
+                                            target: self,
+                                            action: #selector(shuffleTracks))
+        shuffleButton.accessibilityIdentifier = "shuffle"
+        navigationItem.rightBarButtonItem = shuffleButton
     }
 
     private func fetchTracks() {
         mainView.setLoading(true)
+
         let chosenArtists = [909253, 1171421960, 358714030, 1419227, 264111789]
         getTracksUseCase.execute(artists: chosenArtists) { [mainView] (result) in
             mainView.setLoading(false)
@@ -39,7 +43,7 @@ class TrackListController: BaseViewController<TrackListView> {
         }
     }
 
-    @objc func shuffleTracks() {
+    @objc func shuffleTracks() {        
         mainView.addTracks(shuffleUseCase.execute(tracks: mainView.currentList))
     }
 }
