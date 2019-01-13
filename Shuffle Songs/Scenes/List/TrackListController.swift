@@ -43,7 +43,7 @@ class TrackListController: BaseViewController<TrackListView> {
         }
     }
 
-    @objc func shuffleTracks() {        
+    @objc func shuffleTracks() {
         mainView.addTracks(shuffleUseCase.execute(tracks: mainView.currentList))
     }
 }
