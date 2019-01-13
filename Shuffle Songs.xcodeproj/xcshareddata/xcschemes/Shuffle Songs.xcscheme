@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -55,6 +56,16 @@
                BlueprintIdentifier = "AD6CDAAD21E786AF00AF38FE"
                BuildableName = "DomainTests.xctest"
                BlueprintName = "DomainTests"
+               ReferencedContainer = "container:Shuffle Songs.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD7F089C21E94840004B39F0"
+               BuildableName = "APIProviderTests.xctest"
+               BlueprintName = "APIProviderTests"
                ReferencedContainer = "container:Shuffle Songs.xcodeproj">
             </BuildableReference>
          </TestableReference>

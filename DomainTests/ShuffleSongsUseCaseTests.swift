@@ -1,7 +1,7 @@
 import XCTest
 @testable import Domain
 
-class DomainTests: XCTestCase {
+class ShuffleSongsUseCaseTests: XCTestCase {
     func testIfShuffleWillReturnDifferentLists() {
         let useCase = ShuffleSongsUseCase()
         let array = tracksArray()

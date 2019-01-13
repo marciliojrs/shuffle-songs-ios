@@ -8,6 +8,7 @@ final class TrackListItemCell: UITableViewCell {
         label.textColor = .secondary
         label.numberOfLines = 2
         label.font = .preferredFont(forTextStyle: .body)
+        label.accessibilityIdentifier = "trackNameLabel"
         return label
     }()
 
@@ -17,6 +18,7 @@ final class TrackListItemCell: UITableViewCell {
         label.textColor = .white
         label.numberOfLines = 2
         label.font = .preferredFont(forTextStyle: .body)
+        label.accessibilityIdentifier = "trackArtistLabel"
         return label
     }()
 
@@ -27,6 +29,7 @@ final class TrackListItemCell: UITableViewCell {
         imageView.layer.cornerRadius = 8
         imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFill
+        imageView.accessibilityIdentifier = "trackImageView"
 
         return imageView
     }()

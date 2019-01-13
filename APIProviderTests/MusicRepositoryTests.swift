@@ -54,7 +54,8 @@ class MusicRepositoryTests: XCTestCase {
             artistName: "John Dollar",
             name: "Warmth of the Road",
             //swiftlint:disable:next line_length
-            artwork: URL(string: "https://firebasestorage.googleapis.com/v0/b/tw-exercicio-mobile.appspot.com/o/albums%2Fjohn-dollar-antihero.png?alt=media&token=68b89bd6-87c4-4122-9998-dbd33f75f90c")!
+            artwork: URL(string: "https://firebasestorage.googleapis.com/v0/b/tw-exercicio-mobile.appspot.com/o/albums%2Fjohn-dollar-antihero.png?alt=media&token=68b89bd6-87c4-4122-9998-dbd33f75f90c")!,
+            primaryGenre: "Rock"
         )
 
         callLookup(in: networkService) { (output) in

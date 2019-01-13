@@ -8,6 +8,7 @@ class TrackListView: BaseView {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 80
         tableView.backgroundColor = .primary
+        tableView.accessibilityIdentifier = "tableView"
         return tableView
     }()
 
@@ -16,12 +17,15 @@ class TrackListView: BaseView {
         indicatorView.translatesAutoresizingMaskIntoConstraints = false
         indicatorView.hidesWhenStopped = true
         indicatorView.transform = .init(scaleX: 1.5, y: 1.5)
+        indicatorView.accessibilityIdentifier = "loadingView"
         return indicatorView
     }()
 
     private var adapter = TrackListAdapter()
 
     override func setupView() {
+        accessibilityIdentifier = "trackListView"
+
         addSubview(tableView)
         addSubview(loadingView)
         adapter.attach(tableView)
